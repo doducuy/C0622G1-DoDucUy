@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>Calculator</h3>
+    <form action="abc.com" method="post" name="uhmt">
+          <table>
+              <tr>
+                  <td>
+                      <input type="text" id="o1" size="25">
+                      <input type="text" id="o2" size="25">
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <button type="button" onclick="pheptinh('cong')">Addition(+)</button>
+                      <button type="button" onclick="pheptinh('tru')">Subtraction(-)</button>
+                      <button type="button" onclick="pheptinh('nhan')">Multiplication(*)</button>
+                      <button type="button" onclick="pheptinh('chia')">Division(/)</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <p >Kết quả:<span id="kq"></span></p>
+                  </td>
+              </tr>
+              </tr>
+          </table>
+    </form>
+</body>
+<script language="JavaScript">
+    function pheptinh(value) {
+        let gt1 = document.getElementById("o1").value;
+        let gt2 = document.getElementById("o2").value;
+        gt1 = parseInt(gt1);
+        gt2 = parseInt(gt2);
+        if (value=='cong'){
+            document.getElementById("kq").innerHTML =gt1+gt2;
+        }
+        if (value=='tru'){
+            document.getElementById("kq").innerHTML =gt1-gt2;
+        }
+        if (value=='nhan'){
+            document.getElementById("kq").innerHTML =gt1*gt2;
+        }
+        if (value=='chia'){
+            document.getElementById("kq").innerHTML =gt1/gt2;
+        }
+
+    }
+</script>
+</html>
