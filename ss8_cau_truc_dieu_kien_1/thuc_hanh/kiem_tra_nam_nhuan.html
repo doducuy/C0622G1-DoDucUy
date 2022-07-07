@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    let year = +prompt("nhập năm vô đây");
+    if (year % 4 == 0){
+        if(year%100==0){
+            if(year%400==0){
+                alert('la nam nhuan')
+            }else{
+                alert('k la nam nhuan')
+            }
+        }else {
+            alert(' la nam nhuan')
+        }
+    }else{
+        alert('k la nam nhuan')
+    }
+</script>
+</html>
