@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let diemGiuaKy = parseInt(prompt("nhập điểm giữa kỳ"));
+    let diemCuoiKy = parseInt(prompt("nhập điểm cuối kỳ"));
+    let diemTrungBinh = ((diemCuoiKy*3+diemGiuaKy*2)/5);
+    if(diemTrungBinh>=8){
+        alert("Học lực giỏi");
+    }else if(diemTrungBinh>=6.5){
+        alert("Học lực khá");
+    }else{
+        alert("Học lực trung bình");
+    }
+
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let soLuong = parseInt(prompt("số lượng hàng bán được"));
+    let giaBan = parseInt(prompt("giá bán mỗi hàng hóa"));
+    let hoaHong ="";
+    if(soLuong<20){
+        alert("k được nhận hoa hồng");
+    }else if(soLuong<=30){
+        hoaHong=soLuong*giaBan*10/100;
+        alert("hoa hồng nhận được là " +hoaHong);
+    }else {
+        hoaHong=soLuong*giaBan*20/100;
+        alert("hoa hồng nhận được là " + hoaHong);
+    }
+</script>
+</html>
