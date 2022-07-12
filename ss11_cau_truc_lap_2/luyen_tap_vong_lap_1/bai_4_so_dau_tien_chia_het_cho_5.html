@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let dem = 0;
+    let soDauTien = "";
+    let f3, f1 = 0, f2 = 1;
+    while (dem < 20) {
+        f3 = f1 + f2;
+        f1 = f2;
+        f2 = f3;
+        dem++;
+        if(f3%5==0){
+            document.write("số đầu tiên chia hết cho 5 trong dãy fibo là: "+f3);
+            break;
+        }
+    }
+</script>
+</html>

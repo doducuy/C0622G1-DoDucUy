@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let i=0;
+    let f1=0, f2=1,f3;
+    let dayFibo="dãy fibo : <br> ";
+    while (i<50){
+        f3=f1+f2;
+        dayFibo=dayFibo+f1+ "<br>";
+        f1=f2;
+        f2=f3;
+        i++;
+    }document.write(dayFibo);
+</script>
+</html>

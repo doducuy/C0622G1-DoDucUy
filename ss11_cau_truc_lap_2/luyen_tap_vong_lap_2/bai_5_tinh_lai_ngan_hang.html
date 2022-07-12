@@ -9,13 +9,15 @@
 <script>
     let soTienVayDau=parseInt(prompt("số tiền vay lúc đầu"));
     let soThangVay=parseInt(prompt("nhập số tháng vay vô đây"));
+    let laiSuat=0.05;
     let i=1;
-    let tongVay="";
+    let tongVay=1;
+    let heSoVay=1;
     let tienLaiPhaiDong="";
     while (i<=soThangVay)  {
-        tongVay=soTienVayDau* Math.pow(1.1,i);
+        heSoVay=heSoVay*(1+laiSuat);
         i++;
-    }
+    }tongVay=heSoVay*soTienVayDau;
     tienLaiPhaiDong= tongVay-soTienVayDau;
     alert("Tiền lãi phải đóng là " +tienLaiPhaiDong);
 </script>

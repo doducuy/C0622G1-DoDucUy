@@ -7,16 +7,16 @@
 <body>
 <script>
     let dem = 0;
-    let fibonaci = '20 số fibonacci đầu tiên là:<br>';
-    let f0, f1 = 0, f2 = 1;
+    let dayFibo = '20 số fibonacci đầu tiên là:<br>';
+    let f3, f1 = 0, f2 = 1;
     while (dem < 20) {
-        f0 = f1 + f2;
-        fibonaci += f1 + '<br>';
+        f3 = f1 + f2;
+        dayFibo += f1 + '<br>';
         f1 = f2;
-        f2 = f0;
+        f2 = f3;
         dem++;
     }
-    document.write(fibonaci);
+    document.write(dayFibo);
 </script>
 </body>
 </html>
