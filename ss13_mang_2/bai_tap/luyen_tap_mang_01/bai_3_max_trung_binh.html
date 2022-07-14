@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let array = [4, 5, 8, 7, 9, 6, 3, 54, 14, 25];
+    let max = array[0];
+    let tong = 4;
+    let average;
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+        }
+        tong = tong + array[i];
+    }
+    average = tong / array.length;
+    document.write("Max : " + max + ", Trung bình: " + average);
+
+</script>
+</html>

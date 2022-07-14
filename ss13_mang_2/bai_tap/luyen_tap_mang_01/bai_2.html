@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let array=[4,5,78,96,41,13,25,79,42,45]
+    let max=array[0];
+    let index;
+    for (let i = 1; i <array.length ; i++) {
+        if(array[i]>max){
+            max=array[i];
+            index=i;
+        }
+    }document.write("Phần tử có giá trị lớn nhất trong mảng là: "+max+" vị trí: "+index);
+</script>
+</html>

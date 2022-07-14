@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let array=["ads","qwe","401",11,2];
+    let count=0;
+    for (let i = 0; i < array.length; i++) {
+        if(typeof array[i]=="string" && array[i].length>1 ){
+            count=count+1;
+        }
+    }document.write(count);
+</script>
+</html>

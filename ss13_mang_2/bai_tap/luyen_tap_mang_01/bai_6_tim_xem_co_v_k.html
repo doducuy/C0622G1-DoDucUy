@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let array=[1,2,3,4,5,6,7,8,9,10];
+    let number=parseInt(prompt("nhập 1 số"));
+    let result;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == number) {
+            result = true;
+        }
+    }
+    if(result==true){
+        document.write("số vừa nhập có trong mảng");
+    }else {
+        document.write("số vừa nhập không có trong mảng");
+    }
+</script>
+</html>
