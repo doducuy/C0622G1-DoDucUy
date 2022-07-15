@@ -7,12 +7,39 @@
 <body>
 </body>
 <script>
-    let s1 = "hoian";
-    let s2 = "hanoi";
-    if(s1.length==s2.length){
-        for (let i = 0; i < s1.length; i++) {
-            
+    let strOne = "hanoi";
+    let strTwo = "hanoi1";
+    let flag = true;
+    if (strOne.length === strTwo.length) {
+        for (let i = 0; i < strOne.length; i++) {
+            if (strOne[i] != strTwo[i]) {
+                flag = false;
+                break;
+            }
         }
+        if(flag===true){
+            document.write("2 chuỗi bằng nhau")
+
+        }else {
+            document.write("2 chuỗi khac nhau")
+
+        }
+    } else {
+        document.write("2 chuỗi khác nhau");
+
+        // for (let i = 0; i < strOne.length; i++) {
+        //     if (strOne[i] != strTwo[i]) {
+        //         flag = false;
+        //         break;
+        //     }
+        // }
+        // if(flag===true){
+        //     document.write("2 chuỗi bằng nhau")
+        //
+        // }else {
+        //     document.write("2 chuỗi khac nhau")
+        //
+        // }
     }
 </script>
 </html>

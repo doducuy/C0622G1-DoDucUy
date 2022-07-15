@@ -7,11 +7,12 @@
 <body>
 </body>
 <script>
-    let array=[1,6,9,11,15,17,18,19,25,30]
-    for (let i = 0; i <10 ; i++) {
-        if(array[i]>10){
-            document.write(array[i]+"<br>");
-        }
-    }
+    let a=[3,4,5,1,2,8,9]
+    let t;
+    for (let i = 0; i <a.length/2 ; i++) {
+        t=a[i];
+        a[i]=a[a.length-1-i];
+        a[a.length-1-i]=t;
+    }document.write(a);
 </script>
 </html>
