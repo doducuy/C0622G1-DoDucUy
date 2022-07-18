@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    function isPrime(number) {
+        if (number < 2) {
+            return false;
+        } else {
+            for (let i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+    }
+
+    let number = +prompt("nhập 1 số nguyên");
+    if (isPrime(number)) {
+        document.write(number + " is prime");
+    }else{
+        document.write(number + " is not prime");
+    }
+
+</script>
+</html>
