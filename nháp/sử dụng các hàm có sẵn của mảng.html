@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+let array=[1,2,4,3,6,8,9]
+    array.toString();
+let result=[];
+for (let i = 0; i <array.length ; i++) {
+    if(array[i]%2==0&&array[i+1]%2==0){
+        result.push(array[i],"-");
+    }else{
+        result.push(array[i]);
+    }
+}document.write(result);
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+    function isPrime(param) {
+        if (param < 2) {
+            return false;
+        } else {
+            for (let i = 2; i < param; i++) {
+                if (param % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    let count = 0;
+    let i = 1;
+    while (count < 25) {
+        if (isPrime(i)) {
+            document.write(i + "<br>");
+            count++;
+        }
+        i++;
+    }
+
+</script>
+</html>

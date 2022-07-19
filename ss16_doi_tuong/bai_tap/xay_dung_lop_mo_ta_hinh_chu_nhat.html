@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100"></canvas>
+
+</body>
+<script>
+    class HinhChuNhat {
+        constructor(chieuDai, chieuRong) {
+            this.chieuDai = chieuDai;
+            this.chieuRong = chieuRong;
+        }
+
+        tinhChuVi() {
+            let chuVi = (this.chieuDai + this.chieuRong) * 2;
+            return chuVi;
+        }
+
+        tinhDienTich() {
+            let dienTich = (this.chieuRong * this.chieuDai);
+            return dienTich;
+        }
+
+        hienThiChieuDai() {
+            return this.chieuDai;
+        }
+
+        hienThiChieuRong() {
+            return this.chieuRong;
+        }
+
+        canvas() {
+            let c = document.getElementById('myCanvas');
+            let ctx = c.getContext('2d');
+            ctx.fillStyle = 'darkslateblue';
+            ctx.fillRect(0, 0, 200, 100);
+
+        }
+
+    }
+    let hinhChuNhat=new HinhChuNhat(100,50);
+    document.write('</br> Chiều dài của hình chữ nhật là: '+hinhChuNhat.hienThiChieuDai()+'</br>');
+    document.write('Chiều rộng của hình chữ nhật là: '+hinhChuNhat.hienThiChieuRong()+'</br>');
+    document.write('Chu vi của hình chữ nhật là: '+hinhChuNhat.tinhChuVi()+'</br>');
+    document.write('Diện tích của hình chữ nhật là: '+hinhChuNhat.tinhDienTich()+'</br>');
+    hinhChuNhat.canvas();
+
+</script>
+</html>
