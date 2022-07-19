@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    // Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+    function findMin(paramOne, paramTwo, paramThree) {
+        if(paramOne>paramTwo){
+            if(paramTwo>paramThree){
+                return paramThree;
+            }else{
+                return paramTwo
+            }
+        }else if(paramOne<paramThree){
+            return paramOne;
+        }else {
+            return paramThree;
+        }
+    }
+    let first=+prompt("nhập số thứ nhất");
+    let second=+prompt("nhập số thứ hai");
+    let third=+prompt("nhập số thứ ba");
+    document.write(findMin(first,second,third));
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    // Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    function changePlace(paramOne,paramTwo) {
+        let x;
+        x=paramOne;
+        paramOne=paramTwo;
+        paramTwo=x;
+        return paramOne+", "+paramTwo;
+    }
+    let numberFirst=+prompt("nhập số thứ nhất");
+    let numberSecond=+prompt("nhập số thứ hai");
+    document.write(changePlace(numberFirst,numberSecond));
+</script>
+</html>

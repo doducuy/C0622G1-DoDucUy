@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    // Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+    function daoNguocMang(param) {
+        let first=0;
+        let last= param.length-1;
+        let x;
+        while (first<last){
+            x=param[first];
+            param[first]=param[last];
+            param[last]=x;
+            first++;
+            last--;
+        }return param;
+    }
+    let array=[2,4,6,"a","b",1];
+    document.write(daoNguocMang(array));
+</script>
+</html>

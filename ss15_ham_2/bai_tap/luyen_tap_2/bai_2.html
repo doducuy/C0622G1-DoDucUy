@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    // Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+    let pi=3.14;
+    function chuVi(param) {
+let chuVi= pi*2*param;
+document.write("chu vi hình tròn có bán kính "+param+" là: "+chuVi+"<br>");
+return chuVi;
+    }
+    function dienTich(param){
+        let dienTich=pi*param*param;
+        document.write("diện tích hình tròn có bán kình "+param+" là: "+dienTich);
+    }
+    let r=+prompt("nhập bán kính")
+    chuVi(r);
+    dienTich(r);
+</script>
+</html>
