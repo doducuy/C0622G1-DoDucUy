@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let luongTruocThue = +prompt("nhập lương trước thuế");
+    let luongRong;
+    let thueThuNhap;
+    if (luongTruocThue >= 15) {
+        thueThuNhap = luongTruocThue * 0.2;
+        luongRong = luongTruocThue - thueThuNhap;
+    } else if (luongTruocThue < 15 && luongTruocThue >= 7) {
+        thueThuNhap = luongTruocThue * 0.1;
+        luongRong = luongTruocThue - thueThuNhap;
+    } else {
+        thueThuNhap = luongTruocThue * 0.05;
+        luongRong = luongTruocThue - thueThuNhap;
+    }
+    document.write("thuế thu nhập là: " + thueThuNhap + "<br>");
+    document.write("lương ròng(lương sau thuế) là: " + luongRong);
+</script>
+</html>

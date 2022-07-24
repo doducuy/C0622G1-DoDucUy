@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    function doiKyTu(str){
+        // let str="tRuong TAN  Hai";
+        let arrayA=str.split(' ');
+        let arrayB=[];
+        for (let i = 0; i <arrayA.length ; i++) {
+            if(arrayA[i]!=""){
+                arrayB.push(arrayA[i]);
+            }
+        }
+        for (let i = 0; i <arrayB.length ; i++) {
+            arrayB[i]=arrayB[i].toLocaleLowerCase();
+            arrayB[i]=arrayB[i].charAt(0).toUpperCase()+ arrayB[i].slice(1);
+
+        }
+
+        arrayB=arrayB.join(" ");
+        document.write(arrayB);
+    }
+    let str1=prompt("nhập xâu ký tự cần chuyển");
+    doiKyTu(str1);
+
+</script>
+</html>

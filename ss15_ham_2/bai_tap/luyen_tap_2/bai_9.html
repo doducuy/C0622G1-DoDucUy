@@ -9,24 +9,29 @@
 <script>
     // Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
     //     Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
-    function check(one, two) {
-        if (one.indexOf(two) >= 0) {
-            return "aa";
-        } else {
-            return -1;
-        }
+    let soPhanTu = prompt('Nhập số phần tử của mảng');
+    let arr = [];
+    for (let i = 0; i < soPhanTu; i++) {
+        arr.push(prompt('Nhập phần tử : '));
     }
+    document.write('Mảng bạn vừa nhập là: ' + arr + '</br>');
+    let kiTu = prompt('Nhập kí tự muốn kiểm tra: ');
+    let kQua = check(arr, kiTu);
+    document.write(kQua);
 
-    let array = [4, 5, "a", 6, "c", 7];
-    let text=4;
-    // let text = prompt("nhập ký tự bất kỳ");
-    // if (isNaN(Number(text))) {
-    //     document.write(check(array, text));
-    // } else {
-    //     document.write(check(array, Number(text)));
-    //
-    // }
-    document.write(check(array, text));
+    function check(array, character) {
+        let result = 0;
+        if (array.indexOf(character) === -1) {
+            return -1;
+        } else {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] === character) {
+                    result++;
+                }
+            }
+        }
+        return result;
+    }
 
 </script>
 </html>

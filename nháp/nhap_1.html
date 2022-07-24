@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let arrayA = [3, 4, 5, 6];
+    let arrayB = [8, 9, 3, 4];
+    let arrayC = [];
+    let x;
+    for (let i = 0; i < arrayB.length; i++) {
+        x=0;
+        for (let j = 0; j < arrayA.length; j++) {
+            if (arrayB[i] == arrayA[j]) {
+                x++;
+                break;
+            }
+        }
+        if (x == 0) {
+            arrayC.push(arrayB[i]);
+        }
+
+    }
+    document.write(arrayC);
+</script>
+</html>

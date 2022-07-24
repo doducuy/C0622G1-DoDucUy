@@ -8,19 +8,17 @@
 </body>
 <script>
     // Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
-    function daoNguocMang(param) {
-        let first=0;
-        let last= param.length-1;
+    function daoNguocMang(mang) {
         let x;
-        while (first<last){
-            x=param[first];
-            param[first]=param[last];
-            param[last]=x;
-            first++;
-            last--;
-        }return param;
+        for (let i = 0; i < mang.length / 2; i++) {
+            x = mang[i];
+            mang[i] = mang[mang.length - 1 - i];
+            mang[mang.length - 1 - i] = x;
+        }
+        return mang;
     }
-    let array=[2,4,6,"a","b",1];
+
+    let array = [2, 4, 6, "a", "b", 1];
     document.write(daoNguocMang(array));
 </script>
 </html>

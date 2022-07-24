@@ -13,15 +13,15 @@
     let ngoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
     let chomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
 
-    function myFunction(param) {
+    function finConstellation(star) {
         for (let i = 0; i < ngoiSao.length; i++) {
-            if (param == ngoiSao[i]) {
-                document.write(param+" thuộc chòm sao " + chomSao[i]);
+            if (star == ngoiSao[i]) {
+                document.write(star+" thuộc chòm sao " + chomSao[i]);
             }
 
         }
     }
 
-    myFunction(tenNgoiSao);
+    finConstellation(tenNgoiSao);
 </script>
 </html>

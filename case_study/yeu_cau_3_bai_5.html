@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let tenNuoc = ["cafe", "cam vắt", "nước ép cà rốt", "nước ép cà chua", "nước lọc", "nước dừa"];
+    let gia = [12, 15, 18, 10, 5, 20];
+    let number;
+    let soLuong;
+    let tongTien = 0;
+    do {
+        number = +prompt("nhập nước muốn gọi: nhập 1-cafe, nhập 2-cam vắt, nhập 3-nước ép cà rốt, nhập 4-nước ép cà chua, nhập 5-nước lọc, nhập 6-nước dừa, nhập 7-thoát gọi món");
+        if (number == 7) {
+            break;
+        } else {
+            soLuong = +prompt("bạn chọn " + tenNuoc[number - 1] + " giá : " + gia[number - 1] + " với số lượng là: ")
+            tongTien += (soLuong * gia[number - 1]);
+        }
+    } while (number != 7);
+    document.write("Tổng tiền cần thanh toán là: " + tongTien);
+
+</script>
+</html>
