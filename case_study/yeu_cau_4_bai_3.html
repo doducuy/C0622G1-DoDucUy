@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3 - Tìm số lượng kí tự chung</title>
+</head>
+<body>
+<!--Cho hai xâu kí tự, tìm số lượng kí tự chung giữa chúng.
+Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s1, s2) = 3.
+⇨	2 xâu s1 và s2 có 3 kí tự chung: 2 kí tự 'a' và 1 kí tự 'c'.
+aacddef-->
+<script>
+    let str1 = "aabccddeff";
+    let str2 = "adcaadeef";
+    let arr1 = str1.split('');
+    let arr2 = str2.split('');
+    let arrC = [];
+    let index = 0;
+
+
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr2.includes(arr1[i])) {
+            arrC.push(arr1[i]);
+            index = arr2.indexOf(arr1[i]);
+            arr2.splice(index, 1);
+
+        }
+
+    }
+
+
+    alert('Hai xâu vừa nhập có ' + arrC.length + ' kí tự chung, lần lượt là: ' + arrC.sort());
+
+</script>
+</body>
+</html>

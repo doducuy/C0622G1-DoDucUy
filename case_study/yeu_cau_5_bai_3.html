@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3 - Tìm giá trị lớn nhất, nhỏ nhất trong mảng</title>
+</head>
+<body>
+<!--Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều-->
+<script>
+    function min(array) {
+        let min = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (array[i][j] < min) {
+                    min = array[i][j];
+                }
+
+
+            }
+
+        }
+        return min;
+
+    }
+
+    function max(array) {
+        let max = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (array[i][j] > max) {
+                    max = array[i][j];
+                }
+
+
+            }
+
+        }
+        return max;
+
+    }
+
+    let arr = [[5, 3, 23], [10, 1, 16, 4], [43, 17]];
+    alert('Số nhỏ nhất của mảng là: ' + min(arr));
+    alert('Số lớn nhất của mảng là: ' + max(arr));
+</script>
+</body>
+</html>
